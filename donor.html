@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="Donor.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body
+    style="background-image: url(329959.jpg); background-repeat: no-repeat;"
+  >
+    <div class="topnav">
+      <a href="project.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="requester.html">Requester</a>
+      <a class="active" href="donor.html">Donor</a>
+    </div>
+
+    <h1 style="text-align: center;">Enter Donor Details</h1>
+    <div class="formdiv">
+      <p>Name :</p>
+    </div>
+    <div class="formdiv">
+      <input id="id101" type="text" placeholder="Full Name" />
+    </div>
+
+    <div class="formdiv">
+      <p>Age :</p>
+    </div>
+    <div class="formdiv">
+      <input id="id102" type="text" placeholder="Age" />
+    </div>
+    <div class="formdiv">
+      <p>Gender :</p>
+    </div>
+
+    <div id="gender" class="radiobtn">
+      <input id="m" type="radio" name="gender" value="male" checked /> Male
+      <input id="f" type="radio" name="gender" value="female" /> Female
+      <input id="o" type="radio" name="gender" value="other" /> Other
+    </div>
+    <div class="formdiv1">
+      <p>Phone No. :</p>
+    </div>
+
+    <div class="formdiv1">
+      <input id="id104" type="text" placeholder="Phone Number" />
+    </div>
+    <div class="formdiv">
+      <p>Address :</p>
+    </div>
+    <div class="formdiv">
+      <input id="id105" type="text" placeholder="Address" />
+    </div>
+
+    <div class="formdiv">
+      <p>Blood Group :</p>
+    </div>
+
+    <div class="dropdown">
+      <select id="id107" name="Select">
+        <option value="Select">--Select--</option>
+        <option value="A+">A+</option>
+        <option value="B+">B+</option>
+        <option value="AB+">AB+</option>
+        <option value="O+">O+</option>
+        <option value="A-">A-</option>
+        <option value="B-">B-</option>
+        <option value="AB-">AB-</option>
+        <option value="O-">O-</option>
+      </select>
+    </div>
+
+    <div class="formdiv">
+      <p>Inventory Region :</p>
+    </div>
+
+    <div class="dropdown">
+      <select id="id108" name="Select">
+        <option value="Select">--Select--</option>
+        <option value="1">1 : North Bangalore</option>
+        <option value="2">2 : South Bangalore</option>
+        <option value="3">3 : East Bangalore</option>
+        <option value="4">4 : West Bengalore</option>
+      </select>
+    </div>
+
+    <div class="formdiv"><input onclick="onSubmit()" type="submit" /></div>
+  </body>
+</html>
